@@ -1,0 +1,7 @@
+{
+    "title": "中文标题",
+    "about" : {
+        "title" : "About 中文标题",
+        "testbutton" : "嗨 {{value}}"
+    }
+}

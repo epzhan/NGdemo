@@ -1,0 +1,22 @@
+<div class="header-content">
+    <h2>{{"title" | translate }}</h2>
+    <div>
+        <!-- <button mat-raised-button (click)="testing()">
+            testing
+        </button> -->
+    </div>
+    <div>
+        <button mat-button [matMenuTriggerFor]="aboveMenu">Page</button>
+        <mat-menu #aboveMenu="matMenu" yPosition="above">
+            <button mat-menu-item [matMenuTriggerFor]="language">Language</button>
+            <button mat-menu-item *ngFor="let item of navigationLinks"
+                (click)="redirect(item.name)">{{item.label}}</button>
+        </mat-menu>
+
+        <mat-menu #language="matMenu">
+            <button mat-menu-item (click)="switchLanguage('en')">English</button>
+            <button mat-menu-item (click)="switchLanguage('zh_cn')">Chinese</button>
+            <button mat-menu-item (click)="switchLanguage('zh_tw')">Traditional Chinese</button>
+        </mat-menu>
+    </div>
+</div>

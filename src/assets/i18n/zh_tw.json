@@ -1,0 +1,7 @@
+{
+    "title": "Chinese Traditional title",
+    "about": {
+        "title": "About Chinese Traditional Title",
+        "testbutton": "嗨嗨 {{value}}"
+    }
+}

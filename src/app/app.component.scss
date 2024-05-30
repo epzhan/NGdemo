@@ -1,0 +1,21 @@
+.body {
+    display: grid;
+    height: 100%;
+    margin: 2px;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    border: 1px solid blueviolet
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted red;
+    height: 100%;
+}
+
+.footer {
+    border: 1px solid yellowgreen;
+}

@@ -1,0 +1,19 @@
+<div class="about-container">
+    <h4>{{"about.title" | translate}}</h4>
+    <div>
+        <button mat-raised-button (click)="testClick('testing')">
+            {{"about.testbutton" | translate: param}}
+        </button>
+    </div>
+    <br />
+    <ng-container *ngIf="{value: appState$ | async} as data">
+        data 1 == {{data | json}}
+        <br />
+        {{data.value}}
+        <div [ngClass]="{'temp-container-true': data.value, 'temp-container-false': !data.value}">
+            testing container; border will change color base on the button click boolean value
+        </div>
+    </ng-container><br />
+    <ng-container *ngIf="appState$ | async as data">data 2 == {{data | json}}</ng-container><br />
+    <ng-container *ngIf="(appState$ | async) !== undefined as data">data 3 == {{ (appState$ | async) }}</ng-container>
+</div>

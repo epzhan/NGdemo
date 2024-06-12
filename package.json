@@ -6,7 +6,7 @@
     "start": "ng serve",
     "start-proxy": "ng serve --proxy-config src/proxy.conf.json ",
     "build": "ng build",
-    "build-prod":"ng build --configuration=production",
+    "build-prod": "ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "compodoc:build": "compodoc -p tsconfig.doc.json",
@@ -27,6 +27,9 @@
     "@angular/router": "^15.2.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "@zxing/browser": "^0.1.3",
+    "@zxing/library": "^0.20.0",
+    "@zxing/ngx-scanner": "^3.9.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

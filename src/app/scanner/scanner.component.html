@@ -1,0 +1,8 @@
+<div style="text-align:center">
+    <h1>
+        ZXing Scanner in Angular
+    </h1>
+    <zxing-scanner [formats]="allowedFormats" (camerasFound)="onCamerasFound($event)" (scanSuccess)="handleQrCodeResult($event)">
+    </zxing-scanner>
+    <p *ngIf="qrResultString">Scanned Result: {{ qrResultString }}</p>
+</div>

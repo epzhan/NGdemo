@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WaveformComponent } from './waveform.component';
+import { ScannerComponent } from './scanner.component';
 
 const routes: Routes = [
-  { path: 'waveform', component: WaveformComponent }
+  { path: 'scanner', component: ScannerComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class WaveformRoutingModule { }
+export class ScannerRoutingModule { }

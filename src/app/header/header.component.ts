@@ -7,7 +7,8 @@ const NAVIGATION_LINK = [
   { name: 'about', label: 'About', path: 'about' },
   { name: 'employee', label: 'Employee', path: 'employee' },
   { name: 'employeeDetail', label: 'Employee Detail', path: 'employee', value: '12' },
-  { name: 'waveform', label: 'Waveform', path: 'waveform' }
+  { name: 'waveform', label: 'Waveform', path: 'waveform' },
+  { name: 'scanner', label: 'Scanner', path: 'scanner' }
 ];
 
 @Component({

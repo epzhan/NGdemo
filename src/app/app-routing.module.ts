@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'employee/:id', redirectTo: '/employee/:id' },
   { path: 'about', redirectTo: '/about', pathMatch: 'full' },
   { path: 'waveform', redirectTo: '/waveform', pathMatch: 'full' },
+  { path: 'scanner', redirectTo: '/scanner', pathMatch: 'full' },
   { path: '', redirectTo: '/about', pathMatch: 'full' },
 ];
 

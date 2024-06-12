@@ -16,6 +16,7 @@ import { LoaderComponent } from './core/components/loader/loader.component';
 import { LoaderInterceptor } from './core/interceptor/loader.interceptor';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ScannerModule } from './scanner/scanner.module';
 
 export function initApp(service: StartupService) {
   return () => service.getConfig();
@@ -49,6 +50,7 @@ export function createTranslateLoader(http: HttpClient) {
     AboutModule,
     EmployeeModule,
     WaveformModule,
+    ScannerModule
   ],
   providers: [
     { provide: APP_INITIALIZER, useFactory: initApp, deps: [StartupService], multi: true },

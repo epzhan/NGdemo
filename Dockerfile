@@ -2,13 +2,13 @@
 FROM node:14 as build
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci
 
 # Copy the rest of the application files
 COPY . .
@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:latest
 
 # Copy the built Angular app from the build image to the Nginx server
-COPY --from=build /usr/src/app/dist/ngdemo15 /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/ngdemo /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
